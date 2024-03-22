@@ -1,3 +1,48 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["prettier", "@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "react-app",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "no-console": 1,
+    "no-plusplus": 0,
+    "no-shadow": 0,
+    "@typescript-eslint/no-shadow": 0,
+    "react/jsx-key": 2,
+    "react/button-has-type": 1,
+    "import/prefer-default-export": 0,
+
+    "object-curly-spacing": [1, "always"],
+    "@typescript-eslint/no-unused-vars": [
+      1,
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "prettier/prettier": [
+      2,
+      {
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "endOfLine": "auto"
+      }
+    ]
+  }
 }

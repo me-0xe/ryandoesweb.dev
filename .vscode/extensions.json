@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost"
+  ]
+}
